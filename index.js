@@ -5,11 +5,18 @@ function setText(selector, text) {
 	*/
 
 	// Write your code here
+	var element = document.querySelector("p")
+	element.innerText = text;
 }
 
 
 function setTextAll(selector, text) {
 	// Write your code here
+	var arrayElements = document.querySelectorAll("div .block a")
+	// element.innerText = text;
+	arrayElements.forEach(function(element){
+		element.innerText = text;
+	});
 }
 
 
